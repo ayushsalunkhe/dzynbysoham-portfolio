@@ -215,7 +215,7 @@ export default function StudioSequence() {
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", setSize);
     };
-  }, [isLoading, smoothProgress, images]);
+  }, [isLoading, smoothProgress, images, heroGone]);
 
   if (!mounted) return null;
   if (heroGone) return null;
